@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tech Blogger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="nav blog-nav">
+                <a class="nav-link active" href="/articles">Home</a>
+                <a class="nav-link" href="/absolute">About</a>
+                <a class="nav-link" href="/articles/showbycategory/2">Python</a>
+                <a class="nav-link" href="/articles/showbycategory/3">PHP</a>
+                <a class="nav-link" href="/articles/showbycategory/1">ASP .NET</a>
+                <a class="nav-link" href="/contact">Reach Us</a>
+                <% if(user!=null){ %>
+                <a class="btn btn-outline btn-light loginbt" href="/users/logout">LogOut</a>
+                <% }else{ %>
+                <a class="btn btn-outline btn-light loginbt" href="/users/login">Login</a>
+                <% } %>
+            </nav>
+        </div>
+    </div>
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">Tech Bloggers</h1>
+            <p class="lead blog-description">Tech blogging site to read blogs related to programming.</p>
+        </div>
+    </div>

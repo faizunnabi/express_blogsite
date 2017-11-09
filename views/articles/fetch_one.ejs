@@ -1,0 +1,15 @@
+<% include ../common/header %>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+          <div class="mt-2">
+            <img src="/assets/img/<%= article.pic %>" height="300" width="500" />
+            <h3 class="pt-3 pb-2"><%= article.title %></h3>
+            <p><%= article.body %></p>
+            <p class="text-muted"><i><%= article.date.toDateString() %></i></p>
+          </div>
+        </div>
+        <% include ../common/sidebar %>
+    </div>
+</div>
+<% include ../common/footer %>
